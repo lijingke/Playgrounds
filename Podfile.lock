@@ -1,16 +1,34 @@
 PODS:
+  - DeviceKit (5.0.0)
+  - MBProgressHUD (1.2.0)
+  - SDWebImage (5.16.0):
+    - SDWebImage/Core (= 5.16.0)
+  - SDWebImage/Core (5.16.0)
   - SnapKit (5.6.0)
+  - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
+  - DeviceKit
+  - MBProgressHUD
+  - SDWebImage
   - SnapKit
+  - SwiftyJSON
 
 SPEC REPOS:
   trunk:
+    - DeviceKit
+    - MBProgressHUD
+    - SDWebImage
     - SnapKit
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  DeviceKit: 0fd016a2cb67aca17c33dc23171cac270131eb88
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  SDWebImage: 2aea163b50bfcb569a2726b6a754c54a4506fcf6
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: b0fb46129f66fe0ae66dbeecf430c91e31f8fb42
+PODFILE CHECKSUM: d5193366b103b387906310e6f3ee7cb2cfd5855a
 
 COCOAPODS: 1.12.1

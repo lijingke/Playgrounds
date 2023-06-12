@@ -6,5 +6,19 @@ target 'Playgrounds' do
   use_frameworks!
 
   # Pods for Playgrounds
-  pod "SnapKit"
+  pod 'SnapKit'
+  pod 'SDWebImage'
+  pod 'MBProgressHUD'
+  pod 'SwiftyJSON'
+  pod 'DeviceKit'
+end
+
+post_install do |installer|
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+      target.build_configurations.each do |config|
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+       end
+    end
+  end
 end
