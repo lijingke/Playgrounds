@@ -12,6 +12,17 @@
 		54570AD42A370DF7004A8B89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54570AD32A370DF7004A8B89 /* Assets.xcassets */; };
 		54570ADF2A370E53004A8B89 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54570ADE2A370E53004A8B89 /* HomeViewController.swift */; };
 		54570AE12A370EB7004A8B89 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54570AE02A370EB7004A8B89 /* Launch Screen.storyboard */; };
+		547D9C092A38580400F3EB51 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C082A38580400F3EB51 /* DownloadViewController.swift */; };
+		547D9C0B2A38583200F3EB51 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C0A2A38583200F3EB51 /* HomeView.swift */; };
+		547D9C0D2A394F2A00F3EB51 /* DownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C0C2A394F2A00F3EB51 /* DownloadView.swift */; };
+		547D9C0F2A39588500F3EB51 /* sport.json in Resources */ = {isa = PBXBuildFile; fileRef = 547D9C0E2A39588500F3EB51 /* sport.json */; };
+		547D9C112A39597100F3EB51 /* SportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C102A39597100F3EB51 /* SportModel.swift */; };
+		547D9C132A395A3E00F3EB51 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C122A395A3E00F3EB51 /* Data+Extension.swift */; };
+		547D9C152A39668000F3EB51 /* DownloadDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C142A39668000F3EB51 /* DownloadDetailView.swift */; };
+		547D9C172A39696A00F3EB51 /* NotificationName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C162A39696A00F3EB51 /* NotificationName+Extension.swift */; };
+		547D9C192A396C6800F3EB51 /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C182A396C6800F3EB51 /* MainTabbarController.swift */; };
+		547D9C1B2A396C8700F3EB51 /* SuperTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C1A2A396C8700F3EB51 /* SuperTabbarController.swift */; };
+		547D9C1D2A396C9600F3EB51 /* SuperNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C1C2A396C9600F3EB51 /* SuperNavigationController.swift */; };
 		547E264D2A3712EC00308B79 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547E262B2A3712EC00308B79 /* UIImageView+Extension.swift */; };
 		547E264E2A3712EC00308B79 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547E262C2A3712EC00308B79 /* UIAlertController+Extension.swift */; };
 		547E264F2A3712EC00308B79 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547E262D2A3712EC00308B79 /* UIFont+Extension.swift */; };
@@ -71,6 +82,17 @@
 		54570AD82A370DF7004A8B89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54570ADE2A370E53004A8B89 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		54570AE02A370EB7004A8B89 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		547D9C082A38580400F3EB51 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
+		547D9C0A2A38583200F3EB51 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		547D9C0C2A394F2A00F3EB51 /* DownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadView.swift; sourceTree = "<group>"; };
+		547D9C0E2A39588500F3EB51 /* sport.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sport.json; sourceTree = "<group>"; };
+		547D9C102A39597100F3EB51 /* SportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportModel.swift; sourceTree = "<group>"; };
+		547D9C122A395A3E00F3EB51 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		547D9C142A39668000F3EB51 /* DownloadDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadDetailView.swift; sourceTree = "<group>"; };
+		547D9C162A39696A00F3EB51 /* NotificationName+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extension.swift"; sourceTree = "<group>"; };
+		547D9C182A396C6800F3EB51 /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
+		547D9C1A2A396C8700F3EB51 /* SuperTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperTabbarController.swift; sourceTree = "<group>"; };
+		547D9C1C2A396C9600F3EB51 /* SuperNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperNavigationController.swift; sourceTree = "<group>"; };
 		547E262B2A3712EC00308B79 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		547E262C2A3712EC00308B79 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		547E262D2A3712EC00308B79 /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
@@ -168,7 +190,12 @@
 			isa = PBXGroup;
 			children = (
 				54570ACA2A370DF6004A8B89 /* AppDelegate.swift */,
+				547D9C182A396C6800F3EB51 /* MainTabbarController.swift */,
+				547D9C1A2A396C8700F3EB51 /* SuperTabbarController.swift */,
+				547D9C1C2A396C9600F3EB51 /* SuperNavigationController.swift */,
 				54570ADE2A370E53004A8B89 /* HomeViewController.swift */,
+				547D9C0A2A38583200F3EB51 /* HomeView.swift */,
+				547D9C072A3857E500F3EB51 /* Module */,
 				547E266E2A37131300308B79 /* Playgrounds-Bridging-Header.h */,
 				547E26722A37142A00308B79 /* Tools */,
 				547E262A2A3712EC00308B79 /* Extension */,
@@ -179,19 +206,31 @@
 			path = Playgrounds;
 			sourceTree = "<group>";
 		};
+		547D9C072A3857E500F3EB51 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				547D9C142A39668000F3EB51 /* DownloadDetailView.swift */,
+				547D9C0C2A394F2A00F3EB51 /* DownloadView.swift */,
+				547D9C082A38580400F3EB51 /* DownloadViewController.swift */,
+				547D9C0E2A39588500F3EB51 /* sport.json */,
+				547D9C102A39597100F3EB51 /* SportModel.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
 		547E262A2A3712EC00308B79 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				547E266F2A37131400308B79 /* UIImage+Gradient.h */,
-				547E26702A37131400308B79 /* UIImage+Gradient.m */,
 				547E264C2A3712EC00308B79 /* Array+Extension.swift */,
 				547E26422A3712EC00308B79 /* Bool+Extension.swift */,
+				547D9C122A395A3E00F3EB51 /* Data+Extension.swift */,
 				547E26312A3712EC00308B79 /* Date+Extension.swift */,
 				547E26392A3712EC00308B79 /* Decimal+Extension.swift */,
 				547E26412A3712EC00308B79 /* DesignStyleLayout.swift */,
 				547E26472A3712EC00308B79 /* Dictionary+Extension.swift */,
 				547E263D2A3712EC00308B79 /* Double+Extension.swift */,
 				547E26302A3712EC00308B79 /* Int+Extension.swift */,
+				547D9C162A39696A00F3EB51 /* NotificationName+Extension.swift */,
 				547E26362A3712EC00308B79 /* NSObject+Extension.swift */,
 				547E26442A3712EC00308B79 /* Sequence+Extension.swift */,
 				547E263F2A3712EC00308B79 /* String+Extension.swift */,
@@ -205,6 +244,8 @@
 				547E262F2A3712EC00308B79 /* UIColor+Extension.swift */,
 				547E262D2A3712EC00308B79 /* UIFont+Extension.swift */,
 				547E26382A3712EC00308B79 /* UIImage+Extension.swift */,
+				547E266F2A37131400308B79 /* UIImage+Gradient.h */,
+				547E26702A37131400308B79 /* UIImage+Gradient.m */,
 				547E262B2A3712EC00308B79 /* UIImageView+Extension.swift */,
 				547E263A2A3712EC00308B79 /* UIImageView+Network.swift */,
 				547E26322A3712EC00308B79 /* UILabel+Extension.swift */,
@@ -222,21 +263,21 @@
 		547E26722A37142A00308B79 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				547E26732A37142A00308B79 /* LogUtil.swift */,
-				547E26762A37142A00308B79 /* FPSView.swift */,
-				547E26772A37142A00308B79 /* DateUtil.swift */,
-				547E267A2A37142A00308B79 /* DeviceHelper.swift */,
-				547E267B2A37142A00308B79 /* UserHelper.swift */,
-				547E267C2A37142A00308B79 /* Timer */,
-				547E267F2A37142A00308B79 /* CustomNotify.swift */,
-				547E26802A37142A00308B79 /* RegexString.swift */,
-				547E26812A37142A00308B79 /* CommonUtil.swift */,
-				547E26822A37142A00308B79 /* V2FPSLabel.swift */,
-				547E26832A37142A00308B79 /* DrawSignatureView.swift */,
-				547E26842A37142A00308B79 /* Const.swift */,
 				547E26852A37142A00308B79 /* Colors.swift */,
+				547E26812A37142A00308B79 /* CommonUtil.swift */,
+				547E26842A37142A00308B79 /* Const.swift */,
+				547E267F2A37142A00308B79 /* CustomNotify.swift */,
+				547E26772A37142A00308B79 /* DateUtil.swift */,
 				547E26862A37142A00308B79 /* Debouncer */,
+				547E267A2A37142A00308B79 /* DeviceHelper.swift */,
+				547E26832A37142A00308B79 /* DrawSignatureView.swift */,
+				547E26762A37142A00308B79 /* FPSView.swift */,
 				547E26882A37142A00308B79 /* JKDateTool.swift */,
+				547E26732A37142A00308B79 /* LogUtil.swift */,
+				547E26802A37142A00308B79 /* RegexString.swift */,
+				547E267C2A37142A00308B79 /* Timer */,
+				547E267B2A37142A00308B79 /* UserHelper.swift */,
+				547E26822A37142A00308B79 /* V2FPSLabel.swift */,
 				547E26892A37142A00308B79 /* ViewStyle.swift */,
 			);
 			path = Tools;
@@ -329,6 +370,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				547D9C0F2A39588500F3EB51 /* sport.json in Resources */,
 				54570AE12A370EB7004A8B89 /* Launch Screen.storyboard in Resources */,
 				54570AD42A370DF7004A8B89 /* Assets.xcassets in Resources */,
 			);
@@ -384,12 +426,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				547E269F2A37142A00308B79 /* ViewStyle.swift in Sources */,
+				547D9C132A395A3E00F3EB51 /* Data+Extension.swift in Sources */,
 				547E26512A3712EC00308B79 /* UIColor+Extension.swift in Sources */,
 				547E26522A3712EC00308B79 /* Int+Extension.swift in Sources */,
 				547E26932A37142A00308B79 /* UserHelper.swift in Sources */,
 				547E26642A3712EC00308B79 /* UIView+Border.swift in Sources */,
 				547E26542A3712EC00308B79 /* UILabel+Extension.swift in Sources */,
 				547E26592A3712EC00308B79 /* UIView+Extension.swift in Sources */,
+				547D9C112A39597100F3EB51 /* SportModel.swift in Sources */,
 				547E264D2A3712EC00308B79 /* UIImageView+Extension.swift in Sources */,
 				547E269A2A37142A00308B79 /* DrawSignatureView.swift in Sources */,
 				54570ACB2A370DF6004A8B89 /* AppDelegate.swift in Sources */,
@@ -398,7 +442,9 @@
 				547E26692A3712EC00308B79 /* String+JSON.swift in Sources */,
 				547E26562A3712EC00308B79 /* UIButton+Extension.swift in Sources */,
 				547E26942A37142A00308B79 /* CountDownTimer.swift in Sources */,
+				547D9C1B2A396C8700F3EB51 /* SuperTabbarController.swift in Sources */,
 				547E265B2A3712EC00308B79 /* Decimal+Extension.swift in Sources */,
+				547D9C192A396C6800F3EB51 /* MainTabbarController.swift in Sources */,
 				547E26952A37142A00308B79 /* JKTimer.swift in Sources */,
 				547E266D2A3712EC00308B79 /* Array+Extension.swift in Sources */,
 				547E265E2A3712EC00308B79 /* Double+Extension.swift in Sources */,
@@ -408,7 +454,9 @@
 				547E26662A3712EC00308B79 /* UICollectionViewFlowLayout+Extension.swift in Sources */,
 				547E26622A3712EC00308B79 /* DesignStyleLayout.swift in Sources */,
 				547E268C2A37142A00308B79 /* LogUtil.swift in Sources */,
+				547D9C152A39668000F3EB51 /* DownloadDetailView.swift in Sources */,
 				547E264E2A3712EC00308B79 /* UIAlertController+Extension.swift in Sources */,
+				547D9C1D2A396C9600F3EB51 /* SuperNavigationController.swift in Sources */,
 				547E26982A37142A00308B79 /* CommonUtil.swift in Sources */,
 				547E264F2A3712EC00308B79 /* UIFont+Extension.swift in Sources */,
 				547E26602A3712EC00308B79 /* String+Extension.swift in Sources */,
@@ -419,17 +467,21 @@
 				547E265D2A3712EC00308B79 /* UICollectionViewCell+Shadow.swift in Sources */,
 				547E265A2A3712EC00308B79 /* UIImage+Extension.swift in Sources */,
 				547E26972A37142A00308B79 /* RegexString.swift in Sources */,
+				547D9C0D2A394F2A00F3EB51 /* DownloadView.swift in Sources */,
 				547E26922A37142A00308B79 /* DeviceHelper.swift in Sources */,
 				547E269C2A37142A00308B79 /* Colors.swift in Sources */,
 				54570ADF2A370E53004A8B89 /* HomeViewController.swift in Sources */,
 				547E26552A3712EC00308B79 /* UIApplication+Icon.swift in Sources */,
 				547E26532A3712EC00308B79 /* Date+Extension.swift in Sources */,
 				547E265F2A3712EC00308B79 /* UIViewController+Extension.swift in Sources */,
+				547D9C172A39696A00F3EB51 /* NotificationName+Extension.swift in Sources */,
 				547E26582A3712EC00308B79 /* NSObject+Extension.swift in Sources */,
 				547E26652A3712EC00308B79 /* Sequence+Extension.swift in Sources */,
 				547E265C2A3712EC00308B79 /* UIImageView+Network.swift in Sources */,
 				547E26682A3712EC00308B79 /* Dictionary+Extension.swift in Sources */,
+				547D9C092A38580400F3EB51 /* DownloadViewController.swift in Sources */,
 				547E26962A37142A00308B79 /* CustomNotify.swift in Sources */,
+				547D9C0B2A38583200F3EB51 /* HomeView.swift in Sources */,
 				547E26992A37142A00308B79 /* V2FPSLabel.swift in Sources */,
 				547E26902A37142A00308B79 /* DateUtil.swift in Sources */,
 				547E26712A37131400308B79 /* UIImage+Gradient.m in Sources */,

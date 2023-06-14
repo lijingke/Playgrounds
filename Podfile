@@ -11,7 +11,12 @@ target 'Playgrounds' do
   pod 'MBProgressHUD'
   pod 'SwiftyJSON'
   pod 'DeviceKit'
-end
+  pod 'Tiercel'
+  pod 'HandyJSON'
+  pod 'R.swift'
+  
+  # 视图层级
+  pod 'LookinServer', :configurations => ['Debug']end
 
 post_install do |installer|
   installer.generated_projects.each do |project|
