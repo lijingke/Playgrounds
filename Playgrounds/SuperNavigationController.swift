@@ -6,12 +6,16 @@
 //
 
 import Foundation
+import FLEX
 
 class SuperNavigationController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        let flexTap = UITapGestureRecognizer(target: self, action: #selector(fourClick))
+        flexTap.numberOfTapsRequired = 4
+        view.addGestureRecognizer(flexTap)
     }
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
@@ -19,5 +23,9 @@ class SuperNavigationController: UINavigationController {
             viewController.hidesBottomBarWhenPushed = true
         }
         super.pushViewController(viewController, animated: true)
+    }
+    
+    @objc private func fourClick() {
+        FLEXManager.shared.showExplorer()
     }
 }
