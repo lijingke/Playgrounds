@@ -51,7 +51,7 @@ class DownloadDetailView: UIView {
 
 extension DownloadDetailView {
     private func addListener() {
-        NotificationCenter.default.addObserver(self, selector: #selector(handleNotification(noti:)), name: .receiveData, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleNotification(noti:)), name: .downloadStatusChanged, object: nil)
     }
     
     @objc private func handleNotification(noti: NSNotification) {

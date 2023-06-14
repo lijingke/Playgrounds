@@ -24,26 +24,64 @@ class DownloadViewController: UIViewController {
         let free = FileManager.default.tr.freeDiskSpaceInBytes / 1024 / 1024
         print("手机剩余储存空间为： \(free)MB")
         
-        sessionManager = SessionManager(DownloadViewController.identifier, configuration: SessionConfiguration())
-        sessionManager.logger.option = .default
-        NotificationCenter.default.post(name: .receiveData, object: sessionManager)
-        
+        if let sportModel = configData() {
+            videosSource = sportModel.data?.exerciseDetail?.videoMetas?.videos ?? []
+        }
+        setupManager()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if let sportModel = configData() {
-            videosSource = sportModel.data?.exerciseDetail?.videoMetas?.videos ?? []
-            mainView.refreshData(videosSource)
-        }
     }
     
     // MARK: Lazy Get
 
     lazy var mainView: DownloadView = {
         let view = DownloadView()
+        view.delegate = self
         return view
     }()
+}
+
+// MARK: - DownloadViewDelegate
+extension DownloadViewController: DownloadViewDelegate {
+    
+    func startDownload() {
+        sessionManager.totalStart()
+    }
+    
+}
+
+// MARK: - Tiercel
+extension DownloadViewController {
+    func setupManager() {
+        
+        sessionManager = SessionManager(DownloadViewController.identifier, configuration: SessionConfiguration())
+        sessionManager.logger.option = .default
+        mainView.sessionManager = sessionManager
+        NotificationCenter.default.post(name: .downloadStatusChanged, object: sessionManager)
+
+        let downloadURLStrings = videosSource.compactMap({URL(string: $0.videoUrl ?? "")})
+        let fileNameStrings = videosSource.compactMap({$0.name})
+        DispatchQueue.global().async {
+            self.sessionManager.multiDownload(downloadURLStrings, fileNames: fileNameStrings) { [weak self] _ in
+                self?.sessionManager.totalSuspend()
+                NotificationCenter.default.post(name: .downloadStatusChanged, object: nil)
+            }
+        }
+        
+        // 设置 manager 的回调
+        sessionManager.progress { [weak self] (manager) in
+            NotificationCenter.default.post(name: .downloadStatusChanged, object: self?.sessionManager)
+        }.completion { [weak self] manager in
+            NotificationCenter.default.post(name: .downloadStatusChanged, object: self?.sessionManager)
+            if manager.status == .succeeded {
+                // 下载成功
+            } else {
+                // 其他状态
+            }
+        }
+    }
 }
 
 // MARK: - Data

@@ -7,5 +7,5 @@
 
 import Foundation
 extension Notification.Name {
-    static let receiveData = Notification.Name("receiveData")
+    static let downloadStatusChanged = Notification.Name("downloadStatusChanged")
 }

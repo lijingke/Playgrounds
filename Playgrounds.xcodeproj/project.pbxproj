@@ -72,6 +72,8 @@
 		547E269D2A37142A00308B79 /* SYDebouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547E26872A37142A00308B79 /* SYDebouncer.swift */; };
 		547E269E2A37142A00308B79 /* JKDateTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547E26882A37142A00308B79 /* JKDateTool.swift */; };
 		547E269F2A37142A00308B79 /* ViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547E26892A37142A00308B79 /* ViewStyle.swift */; };
+		54D33A312A39902A00B447C4 /* DownloadTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D33A2F2A39902A00B447C4 /* DownloadTaskCell.swift */; };
+		54D33A322A39902A00B447C4 /* DownloadTaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54D33A302A39902A00B447C4 /* DownloadTaskCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +146,8 @@
 		547E26872A37142A00308B79 /* SYDebouncer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYDebouncer.swift; sourceTree = "<group>"; };
 		547E26882A37142A00308B79 /* JKDateTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKDateTool.swift; sourceTree = "<group>"; };
 		547E26892A37142A00308B79 /* ViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStyle.swift; sourceTree = "<group>"; };
+		54D33A2F2A39902A00B447C4 /* DownloadTaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadTaskCell.swift; sourceTree = "<group>"; };
+		54D33A302A39902A00B447C4 /* DownloadTaskCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadTaskCell.xib; sourceTree = "<group>"; };
 		67882D32CE8FF81E1B1BBA9D /* Pods_Playgrounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Playgrounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B38D62A18081040F09B8424 /* Pods-Playgrounds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playgrounds.release.xcconfig"; path = "Target Support Files/Pods-Playgrounds/Pods-Playgrounds.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -210,6 +214,8 @@
 			isa = PBXGroup;
 			children = (
 				547D9C142A39668000F3EB51 /* DownloadDetailView.swift */,
+				54D33A2F2A39902A00B447C4 /* DownloadTaskCell.swift */,
+				54D33A302A39902A00B447C4 /* DownloadTaskCell.xib */,
 				547D9C0C2A394F2A00F3EB51 /* DownloadView.swift */,
 				547D9C082A38580400F3EB51 /* DownloadViewController.swift */,
 				547D9C0E2A39588500F3EB51 /* sport.json */,
@@ -370,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54D33A322A39902A00B447C4 /* DownloadTaskCell.xib in Resources */,
 				547D9C0F2A39588500F3EB51 /* sport.json in Resources */,
 				54570AE12A370EB7004A8B89 /* Launch Screen.storyboard in Resources */,
 				54570AD42A370DF7004A8B89 /* Assets.xcassets in Resources */,
@@ -473,6 +480,7 @@
 				54570ADF2A370E53004A8B89 /* HomeViewController.swift in Sources */,
 				547E26552A3712EC00308B79 /* UIApplication+Icon.swift in Sources */,
 				547E26532A3712EC00308B79 /* Date+Extension.swift in Sources */,
+				54D33A312A39902A00B447C4 /* DownloadTaskCell.swift in Sources */,
 				547E265F2A3712EC00308B79 /* UIViewController+Extension.swift in Sources */,
 				547D9C172A39696A00F3EB51 /* NotificationName+Extension.swift in Sources */,
 				547E26582A3712EC00308B79 /* NSObject+Extension.swift in Sources */,

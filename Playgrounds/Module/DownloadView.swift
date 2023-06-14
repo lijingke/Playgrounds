@@ -7,12 +7,19 @@
 
 import Foundation
 import SDWebImage
+import Tiercel
+
+protocol DownloadViewDelegate: NSObjectProtocol {
+    func startDownload()
+}
 
 class DownloadView: UIView {
-    
     // MARK: Property
+
+    weak var delegate: DownloadViewDelegate?
+    var sessionManager: SessionManager?
     var dataSource: [SportDataExerciseDetailVideoMetasVideos] = []
-    
+
     // MARK: Lify Cycle
 
     override init(frame: CGRect) {
@@ -24,9 +31,13 @@ class DownloadView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+
     // MARK: Lazy Get
-    
+
     lazy var detailView: DownloadDetailView = {
         let view = DownloadDetailView()
         return view
@@ -37,9 +48,10 @@ class DownloadView: UIView {
         table.delegate = self
         table.dataSource = self
         table.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.identifier)
+        table.register(UINib(nibName: "\(DownloadTaskCell.self)", bundle: nil), forCellReuseIdentifier: DownloadTaskCell.reuseIdentifier)
         return table
     }()
-    
+
     lazy var startDownloadBtn: UIButton = {
         let btn = UIButton(type: .custom)
         btn.setTitle("开始下载", for: .normal)
@@ -52,12 +64,19 @@ class DownloadView: UIView {
     }()
 }
 
-
-// MARK: - UITableViewDelegate
+// MARK: - Event
 
 extension DownloadView {
     @objc private func startBtnAction() {
-        
+        delegate?.startDownload()
+    }
+
+    private func addListener() {
+        NotificationCenter.default.addObserver(self, selector: #selector(handleNotification(noti:)), name: .downloadStatusChanged, object: nil)
+    }
+
+    @objc private func handleNotification(noti: NSNotification) {
+        tableView.reloadData()
     }
 }
 
@@ -73,33 +92,76 @@ extension DownloadView: UITableViewDelegate {
 
 extension DownloadView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource.count
+        return sessionManager?.tasks.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.identifier)!
-        let data = dataSource[indexPath.row]
-        var content = cell.defaultContentConfiguration()
-        // Configure content.
-        content.image = UIImage(systemName: "square.and.arrow.down")
-        content.text = data.name
-        content.secondaryText = data.videoUrl
-        // Customize appearance.
-        content.imageProperties.tintColor = .random
-        cell.contentConfiguration = content
+//        let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.identifier)!
+//        let data = dataSource[indexPath.row]
+//        var content = cell.defaultContentConfiguration()
+//        // Configure content.
+//        content.image = UIImage(systemName: "square.and.arrow.down")
+//        content.text = data.name
+//        content.secondaryText = data.videoUrl
+//        // Customize appearance.
+//        content.imageProperties.tintColor = .random
+//        cell.contentConfiguration = content
+//        return cell
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: DownloadTaskCell.reuseIdentifier, for: indexPath) as! DownloadTaskCell
         return cell
     }
-}
 
-// MARK: - Event
+    // 每个 cell 中的状态更新，应该在 willDisplay 中执行
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let task = sessionManager?.tasks.safeObject(at: indexPath.row),
+              let cell = cell as? DownloadTaskCell else { return }
 
-extension DownloadView {
-    public func refreshData(_ data: [SportDataExerciseDetailVideoMetasVideos]) {
-        self.dataSource = data
-        tableView.reloadData()
+        cell.task?.progress { _ in }.success { _ in }.failure { _ in }
+
+        cell.task = task
+
+        cell.titleLabel.text = task.fileName
+
+        cell.updateProgress(task)
+
+        cell.tapClosure = { [weak self] _ in
+            guard let task = self?.sessionManager?.tasks.safeObject(at: indexPath.row) else { return }
+            switch task.status {
+                case .waiting, .running:
+                    self?.sessionManager?.suspend(task)
+                case .suspended, .failed:
+                    self?.sessionManager?.start(task)
+                default:
+                    break
+            }
+        }
+
+        task.progress { [weak cell] task in
+            cell?.updateProgress(task)
+        }
+        .success { [weak cell] task in
+            cell?.updateProgress(task)
+            // 下载任务成功了
+        }
+        .failure { [weak cell] task in
+            cell?.updateProgress(task)
+            if task.status == .suspended {
+                // 下载任务暂停了
+            }
+
+            if task.status == .failed {
+                // 下载任务失败了
+            }
+            if task.status == .canceled {
+                // 下载任务取消了
+            }
+            if task.status == .removed {
+                // 下载任务移除了
+            }
+        }
     }
 }
-
 
 // MARK: - UI
 
