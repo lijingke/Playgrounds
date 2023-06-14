@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class ChangeAppICONVC: UIViewController {
     // MARK: Property
@@ -40,11 +41,35 @@ class ChangeAppICONVC: UIViewController {
         view.backgroundColor = .systemGroupedBackground
         return view
     }()
+    
+    lazy var resetICONBtn: UIButton = {
+        let btn = UIButton(type: .custom)
+        btn.setTitle("恢复默认", for: .normal)
+        btn.setTitleColor(.white, for: .normal)
+        btn.backgroundColor = UIColor(hexString: "#B0E0E6")
+        btn.titleLabel?.font = UIFont.medium(16)
+        btn.layer.cornerRadius = 22
+        btn.addTarget(self, action: #selector(resetICONBtnAction), for: .touchUpInside)
+        return btn
+    }()
 }
 
 // MARK: - Event
 
 extension ChangeAppICONVC {
+    @objc private func resetICONBtnAction() {
+        if !UIApplication.shared.supportsAlternateIcons {
+            return
+        }
+        UIApplication.shared.setAlternateIconName(nil) { error in
+            if let error {
+                print(error.localizedDescription)
+            }else {
+                UIApplication.shared.perform(#selector(NSXPCConnection.suspend))
+            }
+        }
+    }
+    
     func changeICON(iconName: String) {
         if !UIApplication.shared.supportsAlternateIcons {
             return
@@ -123,9 +148,16 @@ extension ChangeAppICONVC {}
 
 extension ChangeAppICONVC {
     private func setupUI() {
-        view.addSubview(collectionView)
+        view.addSubviews([collectionView, resetICONBtn])
         collectionView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+            make.top.left.right.equalToSuperview()
+            make.bottom.equalTo(resetICONBtn.snp.top)
+        }
+        resetICONBtn.snp.makeConstraints { make in
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
+            make.left.equalToSuperview().offset(38)
+            make.right.equalToSuperview().offset(-38)
+            make.height.equalTo(44)
         }
     }
 }
