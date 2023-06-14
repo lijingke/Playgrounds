@@ -8,45 +8,125 @@
 import Foundation
 import UIKit
 
-class HomeViewController: UIViewController {
-    // MARK: Life Cycle
+import SnapKit
 
+class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.edgesForExtendedLayout = []
-        self.navigationController?.navigationBar.isTranslucent = false
-        let backItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        navigationItem.backBarButtonItem = backItem
+        // Do any additional setup after loading the view.
+
+//        MBProgressManager.showLoadingOrdinary("Loading")
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//            MBProgressManager.showHUD(withSuccess: "加载成功")
+//        }
+        getDataSource()
+        configureNav()
         setupUI()
     }
 
+    var headViewTitles: [String] = []
+
+    var dataSource: [[HomeDataEntity]] = []
+
     // MARK: Lazy Get
 
-    lazy var mainView: HomeView = {
-        let view = HomeView()
-        view.delegate = self
-        return view
+    lazy var tableView: UITableView = {
+        let table = UITableView(frame: .zero, style: .insetGrouped)
+        table.delegate = self
+        table.dataSource = self
+        return table
     }()
 }
 
-// MARK: - HomeViewDelegate
+// MARK: - Data
 
-extension HomeViewController: HomeViewDelegate {
-    func itemClicked(item: Int) {
-        let vc = DownloadViewController()
-        navigationController?.pushViewController(vc, animated: true)
+extension HomeViewController {
+    private func getDataSource() {
+        headViewTitles = ["Playground"]
+
+        for title in headViewTitles {
+            var dicArray: [[CellInfoEnum: String]] = []
+            switch title {
+            case "Playground":
+                dicArray = [
+                    [.cellName: "Download", .className: "DownloadViewController"],
+                    [.cellName: "Change ICON", .className: "ChangeAppICONVC"]
+                ]
+            default:
+                break
+            }
+            let entities = dicArray.compactMap { HomeDataEntity($0) }
+            if entities.count > 0 {
+                dataSource.append(entities)
+            }
+        }
+        tableView.reloadData()
     }
 }
 
 // MARK: - UI
 
 extension HomeViewController {
+    private func configureNav() {
+        navigationItem.title = "瓦西里的百宝箱"
+        let backItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = backItem
+
+        edgesForExtendedLayout = []
+        navigationController?.navigationBar.isTranslucent = false
+    }
+
     private func setupUI() {
-        title = "Playgrounds"
-        view.backgroundColor = .white
-        view.addSubview(mainView)
-        mainView.snp.makeConstraints { make in
+        view.addSubview(tableView)
+        tableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
+    }
+}
+
+// MARK: - UITableViewDelegate
+
+extension HomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let head = UITableViewHeaderFooterView()
+        head.textLabel?.text = headViewTitles[section]
+        return head
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+
+        let entity = dataSource[indexPath.section][indexPath.row]
+        let className = entity.className ?? ""
+        if entity.pushType == "pop" {
+            if let vc = getVCFromString(className) {
+                DispatchQueue.main.async { [weak self] in
+                    self?.present(vc, animated: true, completion: nil)
+                }
+            }
+        } else {
+            if let vc = getVCFromString(className) {
+                vc.navigationItem.title = entity.cellName
+                navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+    }
+}
+
+// MARK: - UITableViewDataSource
+
+extension HomeViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return dataSource.count
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataSource[section].count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.textLabel?.text = dataSource[indexPath.section][indexPath.row].cellName
+        return cell
     }
 }

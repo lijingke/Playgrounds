@@ -13,9 +13,8 @@
 		54570ADF2A370E53004A8B89 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54570ADE2A370E53004A8B89 /* HomeViewController.swift */; };
 		54570AE12A370EB7004A8B89 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54570AE02A370EB7004A8B89 /* Launch Screen.storyboard */; };
 		547D9C092A38580400F3EB51 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C082A38580400F3EB51 /* DownloadViewController.swift */; };
-		547D9C0B2A38583200F3EB51 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C0A2A38583200F3EB51 /* HomeView.swift */; };
 		547D9C0D2A394F2A00F3EB51 /* DownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C0C2A394F2A00F3EB51 /* DownloadView.swift */; };
-		547D9C0F2A39588500F3EB51 /* sport.json in Resources */ = {isa = PBXBuildFile; fileRef = 547D9C0E2A39588500F3EB51 /* sport.json */; };
+		547D9C0F2A39588500F3EB51 /* Sport.json in Resources */ = {isa = PBXBuildFile; fileRef = 547D9C0E2A39588500F3EB51 /* Sport.json */; };
 		547D9C112A39597100F3EB51 /* SportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C102A39597100F3EB51 /* SportModel.swift */; };
 		547D9C132A395A3E00F3EB51 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C122A395A3E00F3EB51 /* Data+Extension.swift */; };
 		547D9C152A39668000F3EB51 /* DownloadDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C142A39668000F3EB51 /* DownloadDetailView.swift */; };
@@ -74,6 +73,11 @@
 		547E269F2A37142A00308B79 /* ViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547E26892A37142A00308B79 /* ViewStyle.swift */; };
 		54D33A312A39902A00B447C4 /* DownloadTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D33A2F2A39902A00B447C4 /* DownloadTaskCell.swift */; };
 		54D33A322A39902A00B447C4 /* DownloadTaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54D33A302A39902A00B447C4 /* DownloadTaskCell.xib */; };
+		54D33A342A399D9B00B447C4 /* HomeDataEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D33A332A399D9B00B447C4 /* HomeDataEntity.swift */; };
+		54D33A362A39A24600B447C4 /* ChangeAppICONVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D33A352A39A24600B447C4 /* ChangeAppICONVC.swift */; };
+		54D33A3D2A39ABB000B447C4 /* ICONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D33A3C2A39ABB000B447C4 /* ICONModel.swift */; };
+		54D33A402A39AD0400B447C4 /* ChangeAppICONCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D33A3F2A39AD0400B447C4 /* ChangeAppICONCell.swift */; };
+		54D33A422A39B04C00B447C4 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D33A412A39B04C00B447C4 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,9 +89,8 @@
 		54570ADE2A370E53004A8B89 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		54570AE02A370EB7004A8B89 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		547D9C082A38580400F3EB51 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
-		547D9C0A2A38583200F3EB51 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		547D9C0C2A394F2A00F3EB51 /* DownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadView.swift; sourceTree = "<group>"; };
-		547D9C0E2A39588500F3EB51 /* sport.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sport.json; sourceTree = "<group>"; };
+		547D9C0E2A39588500F3EB51 /* Sport.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sport.json; sourceTree = "<group>"; };
 		547D9C102A39597100F3EB51 /* SportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportModel.swift; sourceTree = "<group>"; };
 		547D9C122A395A3E00F3EB51 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		547D9C142A39668000F3EB51 /* DownloadDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadDetailView.swift; sourceTree = "<group>"; };
@@ -148,6 +151,11 @@
 		547E26892A37142A00308B79 /* ViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStyle.swift; sourceTree = "<group>"; };
 		54D33A2F2A39902A00B447C4 /* DownloadTaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadTaskCell.swift; sourceTree = "<group>"; };
 		54D33A302A39902A00B447C4 /* DownloadTaskCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadTaskCell.xib; sourceTree = "<group>"; };
+		54D33A332A399D9B00B447C4 /* HomeDataEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataEntity.swift; sourceTree = "<group>"; };
+		54D33A352A39A24600B447C4 /* ChangeAppICONVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppICONVC.swift; sourceTree = "<group>"; };
+		54D33A3C2A39ABB000B447C4 /* ICONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICONModel.swift; sourceTree = "<group>"; };
+		54D33A3F2A39AD0400B447C4 /* ChangeAppICONCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppICONCell.swift; sourceTree = "<group>"; };
+		54D33A412A39B04C00B447C4 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		67882D32CE8FF81E1B1BBA9D /* Pods_Playgrounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Playgrounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B38D62A18081040F09B8424 /* Pods-Playgrounds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playgrounds.release.xcconfig"; path = "Target Support Files/Pods-Playgrounds/Pods-Playgrounds.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,12 +201,14 @@
 		54570AC92A370DF6004A8B89 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				54D33A412A39B04C00B447C4 /* R.generated.swift */,
 				54570ACA2A370DF6004A8B89 /* AppDelegate.swift */,
 				547D9C182A396C6800F3EB51 /* MainTabbarController.swift */,
+				54D33A3E2A39AC9300B447C4 /* Resource */,
 				547D9C1A2A396C8700F3EB51 /* SuperTabbarController.swift */,
 				547D9C1C2A396C9600F3EB51 /* SuperNavigationController.swift */,
 				54570ADE2A370E53004A8B89 /* HomeViewController.swift */,
-				547D9C0A2A38583200F3EB51 /* HomeView.swift */,
+				54D33A332A399D9B00B447C4 /* HomeDataEntity.swift */,
 				547D9C072A3857E500F3EB51 /* Module */,
 				547E266E2A37131300308B79 /* Playgrounds-Bridging-Header.h */,
 				547E26722A37142A00308B79 /* Tools */,
@@ -213,12 +223,14 @@
 		547D9C072A3857E500F3EB51 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				54D33A352A39A24600B447C4 /* ChangeAppICONVC.swift */,
+				54D33A3F2A39AD0400B447C4 /* ChangeAppICONCell.swift */,
 				547D9C142A39668000F3EB51 /* DownloadDetailView.swift */,
 				54D33A2F2A39902A00B447C4 /* DownloadTaskCell.swift */,
 				54D33A302A39902A00B447C4 /* DownloadTaskCell.xib */,
 				547D9C0C2A394F2A00F3EB51 /* DownloadView.swift */,
 				547D9C082A38580400F3EB51 /* DownloadViewController.swift */,
-				547D9C0E2A39588500F3EB51 /* sport.json */,
+				54D33A3C2A39ABB000B447C4 /* ICONModel.swift */,
 				547D9C102A39597100F3EB51 /* SportModel.swift */,
 			);
 			path = Module;
@@ -306,6 +318,14 @@
 			path = Debouncer;
 			sourceTree = "<group>";
 		};
+		54D33A3E2A39AC9300B447C4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				547D9C0E2A39588500F3EB51 /* Sport.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		AEFB2B464CEE550C8FF69ECE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +342,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54570ADB2A370DF7004A8B89 /* Build configuration list for PBXNativeTarget "Playgrounds" */;
 			buildPhases = (
+				54D33A372A39AB1200B447C4 /* R.Swift */,
 				7E3207C850F0047F8B1CA5A2 /* [CP] Check Pods Manifest.lock */,
 				54570AC32A370DF6004A8B89 /* Sources */,
 				54570AC42A370DF6004A8B89 /* Frameworks */,
@@ -377,7 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54D33A322A39902A00B447C4 /* DownloadTaskCell.xib in Resources */,
-				547D9C0F2A39588500F3EB51 /* sport.json in Resources */,
+				547D9C0F2A39588500F3EB51 /* Sport.json in Resources */,
 				54570AE12A370EB7004A8B89 /* Launch Screen.storyboard in Resources */,
 				54570AD42A370DF7004A8B89 /* Assets.xcassets in Resources */,
 			);
@@ -386,6 +407,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		54D33A372A39AB1200B447C4 /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate --generators image,file \"$SRCROOT/Playgrounds/R.generated.swift\"\n";
+		};
 		7E3207C850F0047F8B1CA5A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -435,6 +474,7 @@
 				547E269F2A37142A00308B79 /* ViewStyle.swift in Sources */,
 				547D9C132A395A3E00F3EB51 /* Data+Extension.swift in Sources */,
 				547E26512A3712EC00308B79 /* UIColor+Extension.swift in Sources */,
+				54D33A362A39A24600B447C4 /* ChangeAppICONVC.swift in Sources */,
 				547E26522A3712EC00308B79 /* Int+Extension.swift in Sources */,
 				547E26932A37142A00308B79 /* UserHelper.swift in Sources */,
 				547E26642A3712EC00308B79 /* UIView+Border.swift in Sources */,
@@ -451,6 +491,7 @@
 				547E26942A37142A00308B79 /* CountDownTimer.swift in Sources */,
 				547D9C1B2A396C8700F3EB51 /* SuperTabbarController.swift in Sources */,
 				547E265B2A3712EC00308B79 /* Decimal+Extension.swift in Sources */,
+				54D33A402A39AD0400B447C4 /* ChangeAppICONCell.swift in Sources */,
 				547D9C192A396C6800F3EB51 /* MainTabbarController.swift in Sources */,
 				547E26952A37142A00308B79 /* JKTimer.swift in Sources */,
 				547E266D2A3712EC00308B79 /* Array+Extension.swift in Sources */,
@@ -460,6 +501,7 @@
 				547E26572A3712EC00308B79 /* UIView+Gradient.swift in Sources */,
 				547E26662A3712EC00308B79 /* UICollectionViewFlowLayout+Extension.swift in Sources */,
 				547E26622A3712EC00308B79 /* DesignStyleLayout.swift in Sources */,
+				54D33A3D2A39ABB000B447C4 /* ICONModel.swift in Sources */,
 				547E268C2A37142A00308B79 /* LogUtil.swift in Sources */,
 				547D9C152A39668000F3EB51 /* DownloadDetailView.swift in Sources */,
 				547E264E2A3712EC00308B79 /* UIAlertController+Extension.swift in Sources */,
@@ -479,8 +521,10 @@
 				547E269C2A37142A00308B79 /* Colors.swift in Sources */,
 				54570ADF2A370E53004A8B89 /* HomeViewController.swift in Sources */,
 				547E26552A3712EC00308B79 /* UIApplication+Icon.swift in Sources */,
+				54D33A342A399D9B00B447C4 /* HomeDataEntity.swift in Sources */,
 				547E26532A3712EC00308B79 /* Date+Extension.swift in Sources */,
 				54D33A312A39902A00B447C4 /* DownloadTaskCell.swift in Sources */,
+				54D33A422A39B04C00B447C4 /* R.generated.swift in Sources */,
 				547E265F2A3712EC00308B79 /* UIViewController+Extension.swift in Sources */,
 				547D9C172A39696A00F3EB51 /* NotificationName+Extension.swift in Sources */,
 				547E26582A3712EC00308B79 /* NSObject+Extension.swift in Sources */,
@@ -489,7 +533,6 @@
 				547E26682A3712EC00308B79 /* Dictionary+Extension.swift in Sources */,
 				547D9C092A38580400F3EB51 /* DownloadViewController.swift in Sources */,
 				547E26962A37142A00308B79 /* CustomNotify.swift in Sources */,
-				547D9C0B2A38583200F3EB51 /* HomeView.swift in Sources */,
 				547E26992A37142A00308B79 /* V2FPSLabel.swift in Sources */,
 				547E26902A37142A00308B79 /* DateUtil.swift in Sources */,
 				547E26712A37131400308B79 /* UIImage+Gradient.m in Sources */,
@@ -618,6 +661,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 39FD365F35D3181535514FA4 /* Pods-Playgrounds.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "野原新之助 风间彻 樱田妮妮 佐藤正男 阿呆";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
@@ -652,6 +696,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6B38D62A18081040F09B8424 /* Pods-Playgrounds.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "野原新之助 风间彻 樱田妮妮 佐藤正男 阿呆";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;

@@ -17,10 +17,18 @@ let kNaviHeight = CGFloat(44)
 let kTopHeight = kStatusBarHeight + kNaviHeight
 let kThemeColor = UIColor(hexString: "#0A75D8")
 
-// Networking
-let HttpMethod_GET = "GET"
-let HttpMethod_POST = "POST"
-let HttpMethod_PUT = "PUT"
-let HttpMethod_HEAD = "HEAD"
-let HttpMethod_PATCH = "PATCH"
-let HttpMethod_DELETE = "DELETE"
+// MARK: - Color
+let ColorOfBlueColor = "#3DA3E1"
+let ColorOfBlackColor = "#000000"
+let ColorOfWaveBlueColor = "#44B7FC"
+let ColorOfWaveBlackColor = "#4F4F4F"
+
+// MARK: - 项目相关
+let projectName = Bundle.main.infoDictionary?["CFBundleExecutable"] as? String ?? ""
+
+// MARK: - Net
+let SMDomainURL = "https://sm.ms/api/v2/"
+let TokenAPI = "token"
+let UploadHistoryAPI = "upload_history"
+let ProfileAPI = "profile"
+let UploadAPI = "upload"

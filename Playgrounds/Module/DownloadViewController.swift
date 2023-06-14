@@ -87,7 +87,7 @@ extension DownloadViewController {
 // MARK: - Data
 extension DownloadViewController {
     private func configData() -> SportModel? {
-        guard let path = Bundle.main.path(forResource: "sport", ofType: "json") else { return nil }
+        guard let path = Bundle.main.path(forResource: "Sport", ofType: "json") else { return nil }
         let localData = NSData(contentsOfFile: path)! as Data
         let model = SportModel.deserialize(from: localData.toDic())
         return model
