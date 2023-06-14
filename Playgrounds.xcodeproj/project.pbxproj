@@ -342,8 +342,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54570ADB2A370DF7004A8B89 /* Build configuration list for PBXNativeTarget "Playgrounds" */;
 			buildPhases = (
-				54D33A372A39AB1200B447C4 /* R.Swift */,
 				7E3207C850F0047F8B1CA5A2 /* [CP] Check Pods Manifest.lock */,
+				54D33A372A39AB1200B447C4 /* R.Swift */,
 				54570AC32A370DF6004A8B89 /* Sources */,
 				54570AC42A370DF6004A8B89 /* Frameworks */,
 				54570AC52A370DF6004A8B89 /* Resources */,

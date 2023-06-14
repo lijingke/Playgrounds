@@ -14,9 +14,16 @@ target 'Playgrounds' do
   pod 'Tiercel'
   pod 'HandyJSON'
   pod 'R.swift'
+  pod 'IQKeyboardManager'
   
   # 视图层级
   pod 'LookinServer', :configurations => ['Debug']end
+  
+  # FLEX
+  pod 'FLEX', :configurations => ['Debug']
+  
+  # 播放器
+  pod 'Player'
 
 post_install do |installer|
   installer.generated_projects.each do |project|
