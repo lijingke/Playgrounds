@@ -25,6 +25,8 @@ class DownloadView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
+        addListener()
+        sessionManager = appDelegate.sessionManager
     }
 
     @available(*, unavailable)

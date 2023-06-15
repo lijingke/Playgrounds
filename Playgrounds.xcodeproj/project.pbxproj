@@ -12,6 +12,7 @@
 		54570AD42A370DF7004A8B89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54570AD32A370DF7004A8B89 /* Assets.xcassets */; };
 		54570ADF2A370E53004A8B89 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54570ADE2A370E53004A8B89 /* HomeViewController.swift */; };
 		54570AE12A370EB7004A8B89 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54570AE02A370EB7004A8B89 /* Launch Screen.storyboard */; };
+		546AAEB92A3AACD000E7C4AB /* VideoPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546AAEB82A3AACD000E7C4AB /* VideoPlayerVC.swift */; };
 		547D9C092A38580400F3EB51 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C082A38580400F3EB51 /* DownloadViewController.swift */; };
 		547D9C0D2A394F2A00F3EB51 /* DownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C0C2A394F2A00F3EB51 /* DownloadView.swift */; };
 		547D9C0F2A39588500F3EB51 /* Sport.json in Resources */ = {isa = PBXBuildFile; fileRef = 547D9C0E2A39588500F3EB51 /* Sport.json */; };
@@ -88,6 +89,7 @@
 		54570AD82A370DF7004A8B89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54570ADE2A370E53004A8B89 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		54570AE02A370EB7004A8B89 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		546AAEB82A3AACD000E7C4AB /* VideoPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerVC.swift; sourceTree = "<group>"; };
 		547D9C082A38580400F3EB51 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
 		547D9C0C2A394F2A00F3EB51 /* DownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadView.swift; sourceTree = "<group>"; };
 		547D9C0E2A39588500F3EB51 /* Sport.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sport.json; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				54D33A352A39A24600B447C4 /* ChangeAppICONVC.swift */,
 				54D33A3F2A39AD0400B447C4 /* ChangeAppICONCell.swift */,
 				547D9C142A39668000F3EB51 /* DownloadDetailView.swift */,
+				546AAEB82A3AACD000E7C4AB /* VideoPlayerVC.swift */,
 				54D33A2F2A39902A00B447C4 /* DownloadTaskCell.swift */,
 				54D33A302A39902A00B447C4 /* DownloadTaskCell.xib */,
 				547D9C0C2A394F2A00F3EB51 /* DownloadView.swift */,
@@ -494,6 +497,7 @@
 				54D33A402A39AD0400B447C4 /* ChangeAppICONCell.swift in Sources */,
 				547D9C192A396C6800F3EB51 /* MainTabbarController.swift in Sources */,
 				547E26952A37142A00308B79 /* JKTimer.swift in Sources */,
+				546AAEB92A3AACD000E7C4AB /* VideoPlayerVC.swift in Sources */,
 				547E266D2A3712EC00308B79 /* Array+Extension.swift in Sources */,
 				547E265E2A3712EC00308B79 /* Double+Extension.swift in Sources */,
 				547E26612A3712EC00308B79 /* TimeInterval+Extension.swift in Sources */,

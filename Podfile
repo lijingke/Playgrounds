@@ -15,15 +15,14 @@ target 'Playgrounds' do
   pod 'HandyJSON'
   pod 'R.swift'
   pod 'IQKeyboardManager'
-  
   # 视图层级
   pod 'LookinServer', :configurations => ['Debug']end
-  
   # FLEX
   pod 'FLEX', :configurations => ['Debug']
-  
   # 播放器
   pod 'Player'
+  # 文件管理器
+  pod 'FilesProvider'
 
 post_install do |installer|
   installer.generated_projects.each do |project|

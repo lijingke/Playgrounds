@@ -56,15 +56,14 @@ extension DownloadViewController: DownloadViewDelegate {
 extension DownloadViewController {
     func setupManager() {
         
-        sessionManager = SessionManager(DownloadViewController.identifier, configuration: SessionConfiguration())
-        sessionManager.logger.option = .default
-        mainView.sessionManager = sessionManager
+        sessionManager = appDelegate.sessionManager
         NotificationCenter.default.post(name: .downloadStatusChanged, object: sessionManager)
 
         let downloadURLStrings = videosSource.compactMap({URL(string: $0.videoUrl ?? "")})
-        let fileNameStrings = videosSource.compactMap({$0.name})
+        let fileInfoTuples = videosSource.compactMap({($0.name ?? "UnknowName", $0.videoUrl?.components(separatedBy:".").last ?? "UnknowType")})
+        let fileNamesStrings = fileInfoTuples.compactMap({"\($0.0).\($0.1)"})
         DispatchQueue.global().async {
-            self.sessionManager.multiDownload(downloadURLStrings, fileNames: fileNameStrings) { [weak self] _ in
+            self.sessionManager.multiDownload(downloadURLStrings, fileNames: fileNamesStrings) { [weak self] _ in
                 self?.sessionManager.totalSuspend()
                 NotificationCenter.default.post(name: .downloadStatusChanged, object: nil)
             }
@@ -73,10 +72,12 @@ extension DownloadViewController {
         // 设置 manager 的回调
         sessionManager.progress { [weak self] (manager) in
             NotificationCenter.default.post(name: .downloadStatusChanged, object: self?.sessionManager)
+            LogUtil.log("\(manager.progress.fractionCompleted)")
         }.completion { [weak self] manager in
             NotificationCenter.default.post(name: .downloadStatusChanged, object: self?.sessionManager)
             if manager.status == .succeeded {
                 // 下载成功
+                LogUtil.log("DownloadSuccess")
             } else {
                 // 其他状态
             }

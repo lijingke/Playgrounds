@@ -1,5 +1,6 @@
 PODS:
   - DeviceKit (5.0.0)
+  - FilesProvider (0.26.0)
   - FLEX (5.22.10)
   - HandyJSON (5.0.2)
   - IQKeyboardManager (6.5.11)
@@ -18,6 +19,7 @@ PODS:
 
 DEPENDENCIES:
   - DeviceKit
+  - FilesProvider
   - FLEX
   - HandyJSON
   - IQKeyboardManager
@@ -33,6 +35,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - DeviceKit
+    - FilesProvider
     - FLEX
     - HandyJSON
     - IQKeyboardManager
@@ -47,6 +50,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   DeviceKit: 0fd016a2cb67aca17c33dc23171cac270131eb88
+  FilesProvider: 2a8ae17d8b9c23a6feadb1308ee638fa31d21065
   FLEX: f21ee4f498eed3f8a1eded66b21939fd3b7a22ce
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   IQKeyboardManager: ef43ce1ba1e5aaf4adf222c0a46f39761f246879
@@ -59,6 +63,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   Tiercel: c0a73f876a72800333b15f4e7e48791f4ad21e90
 
-PODFILE CHECKSUM: d45c1c052bccdfaf9251f0d80354bca8ba22a56a
+PODFILE CHECKSUM: d92fb402dfc31ab8adb1a01293ce732e59fab691
 
 COCOAPODS: 1.12.1

@@ -9,6 +9,10 @@ import Foundation
 import Tiercel
 
 class DownloadDetailView: UIView {
+    
+    // MARK: Property
+    var sessionManager: SessionManager = appDelegate.sessionManager
+    
     // MARK: Life Cycle
 
     override init(frame: CGRect) {
@@ -55,13 +59,11 @@ extension DownloadDetailView {
     }
     
     @objc private func handleNotification(noti: NSNotification) {
-        if let sessionManager = noti.object as? SessionManager {
-            totalTasksLabel.text = "总任务：\(sessionManager.succeededTasks.count)/\(sessionManager.tasks.count)"
-            totalSpeedLabel.text = "总速度：\(sessionManager.speedString)"
-            timeRemainingLabel.text = "剩余时间： \(sessionManager.timeRemainingString)"
-            let per = String(format: "%.2f", sessionManager.progress.fractionCompleted)
-            totalProgressLabel.text = "总进度： \(per)"
-        }
+        totalTasksLabel.text = "总任务：\(sessionManager.succeededTasks.count)/\(sessionManager.tasks.count)"
+        totalSpeedLabel.text = "总速度：\(sessionManager.speedString)"
+        timeRemainingLabel.text = "剩余时间： \(sessionManager.timeRemainingString)"
+        let per = String(format: "%.2f", sessionManager.progress.fractionCompleted)
+        totalProgressLabel.text = "总进度： \(per)"
     }
 }
 

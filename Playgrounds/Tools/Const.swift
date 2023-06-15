@@ -32,3 +32,5 @@ let TokenAPI = "token"
 let UploadHistoryAPI = "upload_history"
 let ProfileAPI = "profile"
 let UploadAPI = "upload"
+
+let appDelegate = UIApplication.shared.delegate as! AppDelegate
