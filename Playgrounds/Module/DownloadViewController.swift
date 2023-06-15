@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import Tiercel
 
-class DownloadViewController: UIViewController {
+class DownloadViewController: BaseViewController {
     // MARK: Property
     var videosSource: [SportDataExerciseDetailVideoMetasVideos] = []
     var sessionManager: SessionManager!
@@ -45,6 +45,14 @@ class DownloadViewController: UIViewController {
 
 // MARK: - DownloadViewDelegate
 extension DownloadViewController: DownloadViewDelegate {
+    func itemDidSelected(position: Int) {
+        let task = sessionManager.tasks[position]
+        LogUtil.log(task.filePath)
+        let vc = VideoPlayerVC()
+        vc.title = task.fileName
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
     func startDownload() {
         sessionManager.totalStart()

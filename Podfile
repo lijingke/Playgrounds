@@ -23,6 +23,8 @@ target 'Playgrounds' do
   pod 'Player'
   # 文件管理器
   pod 'FilesProvider'
+  # 导航栏
+  pod 'WXNavigationBar'
 
 post_install do |installer|
   installer.generated_projects.each do |project|

@@ -16,6 +16,7 @@ PODS:
   - SnapKit (5.6.0)
   - SwiftyJSON (5.0.1)
   - Tiercel (3.2.5)
+  - WXNavigationBar (2.3.6)
 
 DEPENDENCIES:
   - DeviceKit
@@ -31,6 +32,7 @@ DEPENDENCIES:
   - SnapKit
   - SwiftyJSON
   - Tiercel
+  - WXNavigationBar
 
 SPEC REPOS:
   trunk:
@@ -47,6 +49,7 @@ SPEC REPOS:
     - SnapKit
     - SwiftyJSON
     - Tiercel
+    - WXNavigationBar
 
 SPEC CHECKSUMS:
   DeviceKit: 0fd016a2cb67aca17c33dc23171cac270131eb88
@@ -62,7 +65,8 @@ SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   Tiercel: c0a73f876a72800333b15f4e7e48791f4ad21e90
+  WXNavigationBar: aa1ceebac517b0720ba6115ef3e13e246d105b42
 
-PODFILE CHECKSUM: d92fb402dfc31ab8adb1a01293ce732e59fab691
+PODFILE CHECKSUM: 5d580a28685e593078f496332d6cfbb929c2f766
 
 COCOAPODS: 1.12.1

@@ -11,6 +11,7 @@ import Tiercel
 
 protocol DownloadViewDelegate: NSObjectProtocol {
     func startDownload()
+    func itemDidSelected(position: Int)
 }
 
 class DownloadView: UIView {
@@ -87,6 +88,7 @@ extension DownloadView {
 extension DownloadView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        delegate?.itemDidSelected(position: indexPath.row)
     }
 }
 

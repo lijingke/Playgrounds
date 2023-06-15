@@ -10,7 +10,7 @@ import UIKit
 
 import SnapKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -69,9 +69,6 @@ extension HomeViewController {
 extension HomeViewController {
     private func configureNav() {
         navigationItem.title = "瓦西里的百宝箱"
-        let backItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        navigationItem.backBarButtonItem = backItem
-
         edgesForExtendedLayout = []
         navigationController?.navigationBar.isTranslucent = false
     }

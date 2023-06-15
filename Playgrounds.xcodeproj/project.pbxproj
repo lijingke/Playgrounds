@@ -13,6 +13,7 @@
 		54570ADF2A370E53004A8B89 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54570ADE2A370E53004A8B89 /* HomeViewController.swift */; };
 		54570AE12A370EB7004A8B89 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54570AE02A370EB7004A8B89 /* Launch Screen.storyboard */; };
 		546AAEB92A3AACD000E7C4AB /* VideoPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546AAEB82A3AACD000E7C4AB /* VideoPlayerVC.swift */; };
+		546AAEBB2A3ABB6B00E7C4AB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546AAEBA2A3ABB6B00E7C4AB /* BaseViewController.swift */; };
 		547D9C092A38580400F3EB51 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C082A38580400F3EB51 /* DownloadViewController.swift */; };
 		547D9C0D2A394F2A00F3EB51 /* DownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C0C2A394F2A00F3EB51 /* DownloadView.swift */; };
 		547D9C0F2A39588500F3EB51 /* Sport.json in Resources */ = {isa = PBXBuildFile; fileRef = 547D9C0E2A39588500F3EB51 /* Sport.json */; };
@@ -90,6 +91,7 @@
 		54570ADE2A370E53004A8B89 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		54570AE02A370EB7004A8B89 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		546AAEB82A3AACD000E7C4AB /* VideoPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerVC.swift; sourceTree = "<group>"; };
+		546AAEBA2A3ABB6B00E7C4AB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		547D9C082A38580400F3EB51 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
 		547D9C0C2A394F2A00F3EB51 /* DownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadView.swift; sourceTree = "<group>"; };
 		547D9C0E2A39588500F3EB51 /* Sport.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sport.json; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				54D33A3E2A39AC9300B447C4 /* Resource */,
 				547D9C1A2A396C8700F3EB51 /* SuperTabbarController.swift */,
 				547D9C1C2A396C9600F3EB51 /* SuperNavigationController.swift */,
+				546AAEBA2A3ABB6B00E7C4AB /* BaseViewController.swift */,
 				54570ADE2A370E53004A8B89 /* HomeViewController.swift */,
 				54D33A332A399D9B00B447C4 /* HomeDataEntity.swift */,
 				547D9C072A3857E500F3EB51 /* Module */,
@@ -225,16 +228,16 @@
 		547D9C072A3857E500F3EB51 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				54D33A352A39A24600B447C4 /* ChangeAppICONVC.swift */,
 				54D33A3F2A39AD0400B447C4 /* ChangeAppICONCell.swift */,
+				54D33A352A39A24600B447C4 /* ChangeAppICONVC.swift */,
 				547D9C142A39668000F3EB51 /* DownloadDetailView.swift */,
-				546AAEB82A3AACD000E7C4AB /* VideoPlayerVC.swift */,
 				54D33A2F2A39902A00B447C4 /* DownloadTaskCell.swift */,
 				54D33A302A39902A00B447C4 /* DownloadTaskCell.xib */,
 				547D9C0C2A394F2A00F3EB51 /* DownloadView.swift */,
 				547D9C082A38580400F3EB51 /* DownloadViewController.swift */,
 				54D33A3C2A39ABB000B447C4 /* ICONModel.swift */,
 				547D9C102A39597100F3EB51 /* SportModel.swift */,
+				546AAEB82A3AACD000E7C4AB /* VideoPlayerVC.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 				547E26602A3712EC00308B79 /* String+Extension.swift in Sources */,
 				547E26502A3712EC00308B79 /* UIView+Layer.swift in Sources */,
 				547E269D2A37142A00308B79 /* SYDebouncer.swift in Sources */,
+				546AAEBB2A3ABB6B00E7C4AB /* BaseViewController.swift in Sources */,
 				547E268F2A37142A00308B79 /* FPSView.swift in Sources */,
 				547E26632A3712EC00308B79 /* Bool+Extension.swift in Sources */,
 				547E265D2A3712EC00308B79 /* UICollectionViewCell+Shadow.swift in Sources */,

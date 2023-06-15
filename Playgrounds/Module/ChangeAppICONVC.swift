@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ChangeAppICONVC: UIViewController {
+class ChangeAppICONVC: BaseViewController {
     // MARK: Property
 
     var dataSource: [ICONModel] = []
