@@ -69,8 +69,6 @@ extension HomeViewController {
 extension HomeViewController {
     private func configureNav() {
         navigationItem.title = "瓦西里的百宝箱"
-        edgesForExtendedLayout = []
-        navigationController?.navigationBar.isTranslucent = false
     }
 
     private func setupUI() {

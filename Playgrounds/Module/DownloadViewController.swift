@@ -17,8 +17,6 @@ class DownloadViewController: BaseViewController {
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.edgesForExtendedLayout = []
-//        self.navigationController?.navigationBar.isTranslucent = false
         setupUI()
         // 检查磁盘空间
         let free = FileManager.default.tr.freeDiskSpaceInBytes / 1024 / 1024
@@ -47,9 +45,9 @@ class DownloadViewController: BaseViewController {
 extension DownloadViewController: DownloadViewDelegate {
     func itemDidSelected(position: Int) {
         let task = sessionManager.tasks[position]
-        LogUtil.log(task.filePath)
         let vc = VideoPlayerVC()
         vc.title = task.fileName
+        vc.filePath = task.filePath
         navigationController?.pushViewController(vc, animated: true)
     }
     

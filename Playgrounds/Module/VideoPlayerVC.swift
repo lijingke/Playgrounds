@@ -11,7 +11,8 @@ import Player
 let videoUrl = URL(string: "https://www.w3schools.com/html/movie.mp4")!
 
 class VideoPlayerVC: BaseViewController {
-    fileprivate var player = Player()
+    // MARK: Property
+    var filePath: String?
     
     // MARK: object lifecycle
 
@@ -25,24 +26,17 @@ class VideoPlayerVC: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 
-        self.player.playerDelegate = self
-        self.player.playbackDelegate = self
-        
-        self.player.playerView.playerBackgroundColor = .black
-        
         self.addChild(self.player)
         self.view.addSubview(self.player.view)
         self.player.didMove(toParent: self)
-        
+
 //        let localUrl = Bundle.main.url(forResource: "IMG_3267", withExtension: "MOV")
 //        self.player.url = localUrl
-        self.player.url = videoUrl
-        
+        self.player.url = URL(filePath: filePath ?? "")
+       
         self.player.playbackLoops = true
-        
+
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTapGestureRecognizer(_:)))
         tapGestureRecognizer.numberOfTapsRequired = 1
         self.player.view.addGestureRecognizer(tapGestureRecognizer)
@@ -50,9 +44,18 @@ class VideoPlayerVC: BaseViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         self.player.playFromBeginning()
     }
+
+    // MARK: Lazy Get
+
+    lazy var player: Player = {
+        let player = Player()
+        player.playerDelegate = self
+        player.playbackDelegate = self
+        player.playerView.playerBackgroundColor = .white
+        return player
+    }()
 }
 
 // MARK: - UIGestureRecognizer
@@ -78,15 +81,15 @@ extension VideoPlayerVC: PlayerDelegate {
     func playerReady(_ player: Player) {
         print("\(#function) ready")
     }
-    
+
     func playerPlaybackStateDidChange(_ player: Player) {
         print("\(#function) \(player.playbackState.description)")
     }
-    
+
     func playerBufferingStateDidChange(_ player: Player) {}
-    
+
     func playerBufferTimeDidChange(_ bufferTime: Double) {}
-    
+
     func player(_ player: Player, didFailWithError error: Error?) {
         print("\(#function) error.description")
     }
@@ -96,11 +99,11 @@ extension VideoPlayerVC: PlayerDelegate {
 
 extension VideoPlayerVC: PlayerPlaybackDelegate {
     func playerCurrentTimeDidChange(_ player: Player) {}
-    
+
     func playerPlaybackWillStartFromBeginning(_ player: Player) {}
-    
+
     func playerPlaybackDidEnd(_ player: Player) {}
-    
+
     func playerPlaybackWillLoop(_ player: Player) {}
 
     func playerPlaybackDidLoop(_ player: Player) {}

@@ -22,7 +22,6 @@
 		547D9C152A39668000F3EB51 /* DownloadDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C142A39668000F3EB51 /* DownloadDetailView.swift */; };
 		547D9C172A39696A00F3EB51 /* NotificationName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C162A39696A00F3EB51 /* NotificationName+Extension.swift */; };
 		547D9C192A396C6800F3EB51 /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C182A396C6800F3EB51 /* MainTabbarController.swift */; };
-		547D9C1B2A396C8700F3EB51 /* SuperTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C1A2A396C8700F3EB51 /* SuperTabbarController.swift */; };
 		547D9C1D2A396C9600F3EB51 /* SuperNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C1C2A396C9600F3EB51 /* SuperNavigationController.swift */; };
 		547E264D2A3712EC00308B79 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547E262B2A3712EC00308B79 /* UIImageView+Extension.swift */; };
 		547E264E2A3712EC00308B79 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547E262C2A3712EC00308B79 /* UIAlertController+Extension.swift */; };
@@ -100,7 +99,6 @@
 		547D9C142A39668000F3EB51 /* DownloadDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadDetailView.swift; sourceTree = "<group>"; };
 		547D9C162A39696A00F3EB51 /* NotificationName+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extension.swift"; sourceTree = "<group>"; };
 		547D9C182A396C6800F3EB51 /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
-		547D9C1A2A396C8700F3EB51 /* SuperTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperTabbarController.swift; sourceTree = "<group>"; };
 		547D9C1C2A396C9600F3EB51 /* SuperNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperNavigationController.swift; sourceTree = "<group>"; };
 		547E262B2A3712EC00308B79 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		547E262C2A3712EC00308B79 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
@@ -209,7 +207,6 @@
 				54570ACA2A370DF6004A8B89 /* AppDelegate.swift */,
 				547D9C182A396C6800F3EB51 /* MainTabbarController.swift */,
 				54D33A3E2A39AC9300B447C4 /* Resource */,
-				547D9C1A2A396C8700F3EB51 /* SuperTabbarController.swift */,
 				547D9C1C2A396C9600F3EB51 /* SuperNavigationController.swift */,
 				546AAEBA2A3ABB6B00E7C4AB /* BaseViewController.swift */,
 				54570ADE2A370E53004A8B89 /* HomeViewController.swift */,
@@ -495,7 +492,6 @@
 				547E26692A3712EC00308B79 /* String+JSON.swift in Sources */,
 				547E26562A3712EC00308B79 /* UIButton+Extension.swift in Sources */,
 				547E26942A37142A00308B79 /* CountDownTimer.swift in Sources */,
-				547D9C1B2A396C8700F3EB51 /* SuperTabbarController.swift in Sources */,
 				547E265B2A3712EC00308B79 /* Decimal+Extension.swift in Sources */,
 				54D33A402A39AD0400B447C4 /* ChangeAppICONCell.swift in Sources */,
 				547D9C192A396C6800F3EB51 /* MainTabbarController.swift in Sources */,
