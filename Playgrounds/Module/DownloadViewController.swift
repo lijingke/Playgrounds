@@ -51,7 +51,6 @@ extension DownloadViewController: DownloadViewDelegate {
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    
     func startDownload() {
         sessionManager.totalStart()
     }

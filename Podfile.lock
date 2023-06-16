@@ -1,9 +1,11 @@
 PODS:
+  - CLPlayer (2.0.4):
+    - SnapKit
   - DeviceKit (5.0.0)
   - FilesProvider (0.26.0)
   - FLEX (5.22.10)
   - HandyJSON (5.0.2)
-  - IQKeyboardManager (6.5.11)
+  - IQKeyboardManager (6.5.12)
   - LookinServer (1.1.7):
     - LookinServer/Core (= 1.1.7)
   - LookinServer/Core (1.1.7)
@@ -19,6 +21,7 @@ PODS:
   - WXNavigationBar (2.3.6)
 
 DEPENDENCIES:
+  - CLPlayer
   - DeviceKit
   - FilesProvider
   - FLEX
@@ -36,6 +39,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - CLPlayer
     - DeviceKit
     - FilesProvider
     - FLEX
@@ -52,11 +56,12 @@ SPEC REPOS:
     - WXNavigationBar
 
 SPEC CHECKSUMS:
+  CLPlayer: 7d5b46bb8b933cbe9813125409a0449523213eea
   DeviceKit: 0fd016a2cb67aca17c33dc23171cac270131eb88
   FilesProvider: 2a8ae17d8b9c23a6feadb1308ee638fa31d21065
   FLEX: f21ee4f498eed3f8a1eded66b21939fd3b7a22ce
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
-  IQKeyboardManager: ef43ce1ba1e5aaf4adf222c0a46f39761f246879
+  IQKeyboardManager: b1fd66ccf7a79095bdcc4a2735231586f744216e
   LookinServer: 4ce0469b066871525611d009d8d16a7a50c23491
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   Player: 37e0acc16ea1495fc241df88fe9f089367513331
@@ -67,6 +72,6 @@ SPEC CHECKSUMS:
   Tiercel: c0a73f876a72800333b15f4e7e48791f4ad21e90
   WXNavigationBar: aa1ceebac517b0720ba6115ef3e13e246d105b42
 
-PODFILE CHECKSUM: 5d580a28685e593078f496332d6cfbb929c2f766
+PODFILE CHECKSUM: af15547ab5425e0f1ed1a6b9a9afd0ae8c2f6a42
 
 COCOAPODS: 1.12.1

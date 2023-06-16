@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		0E37CA730B85178F4D7B8413 /* Pods_Playgrounds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67882D32CE8FF81E1B1BBA9D /* Pods_Playgrounds.framework */; };
+		5410A5D22A3C10AA00D6C7EF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5410A5D12A3C10AA00D6C7EF /* WidgetKit.framework */; };
+		5410A5D42A3C10AA00D6C7EF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5410A5D32A3C10AA00D6C7EF /* SwiftUI.framework */; };
+		5410A5D72A3C10AA00D6C7EF /* PlaygroundsWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5410A5D62A3C10AA00D6C7EF /* PlaygroundsWidgetBundle.swift */; };
+		5410A5D92A3C10AA00D6C7EF /* PlaygroundsWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5410A5D82A3C10AA00D6C7EF /* PlaygroundsWidgetLiveActivity.swift */; };
+		5410A5DB2A3C10AA00D6C7EF /* PlaygroundsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5410A5DA2A3C10AA00D6C7EF /* PlaygroundsWidget.swift */; };
+		5410A5DD2A3C10AB00D6C7EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5410A5DC2A3C10AB00D6C7EF /* Assets.xcassets */; };
+		5410A5E12A3C10AB00D6C7EF /* PlaygroundsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5410A5D02A3C10AA00D6C7EF /* PlaygroundsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		54570ACB2A370DF6004A8B89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54570ACA2A370DF6004A8B89 /* AppDelegate.swift */; };
 		54570AD42A370DF7004A8B89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54570AD32A370DF7004A8B89 /* Assets.xcassets */; };
 		54570ADF2A370E53004A8B89 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54570ADE2A370E53004A8B89 /* HomeViewController.swift */; };
 		54570AE12A370EB7004A8B89 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54570AE02A370EB7004A8B89 /* Launch Screen.storyboard */; };
 		546AAEB92A3AACD000E7C4AB /* VideoPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546AAEB82A3AACD000E7C4AB /* VideoPlayerVC.swift */; };
 		546AAEBB2A3ABB6B00E7C4AB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546AAEBA2A3ABB6B00E7C4AB /* BaseViewController.swift */; };
+		546AAEBD2A3AF93800E7C4AB /* ScreenTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546AAEBC2A3AF93800E7C4AB /* ScreenTool.swift */; };
+		546AAEBF2A3AFCE300E7C4AB /* CLPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546AAEBE2A3AFCE300E7C4AB /* CLPlaceholderView.swift */; };
 		547D9C092A38580400F3EB51 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C082A38580400F3EB51 /* DownloadViewController.swift */; };
 		547D9C0D2A394F2A00F3EB51 /* DownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D9C0C2A394F2A00F3EB51 /* DownloadView.swift */; };
 		547D9C0F2A39588500F3EB51 /* Sport.json in Resources */ = {isa = PBXBuildFile; fileRef = 547D9C0E2A39588500F3EB51 /* Sport.json */; };
@@ -81,8 +90,40 @@
 		54D33A422A39B04C00B447C4 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D33A412A39B04C00B447C4 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5410A5DF2A3C10AB00D6C7EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54570ABF2A370DF6004A8B89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5410A5CF2A3C10AA00D6C7EF;
+			remoteInfo = PlaygroundsWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5410A5E22A3C10AB00D6C7EF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5410A5E12A3C10AB00D6C7EF /* PlaygroundsWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		39FD365F35D3181535514FA4 /* Pods-Playgrounds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playgrounds.debug.xcconfig"; path = "Target Support Files/Pods-Playgrounds/Pods-Playgrounds.debug.xcconfig"; sourceTree = "<group>"; };
+		5410A5D02A3C10AA00D6C7EF /* PlaygroundsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PlaygroundsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5410A5D12A3C10AA00D6C7EF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		5410A5D32A3C10AA00D6C7EF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5410A5D62A3C10AA00D6C7EF /* PlaygroundsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundsWidgetBundle.swift; sourceTree = "<group>"; };
+		5410A5D82A3C10AA00D6C7EF /* PlaygroundsWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundsWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		5410A5DA2A3C10AA00D6C7EF /* PlaygroundsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundsWidget.swift; sourceTree = "<group>"; };
+		5410A5DC2A3C10AB00D6C7EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5410A5DE2A3C10AB00D6C7EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54570AC72A370DF6004A8B89 /* Playgrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playgrounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54570ACA2A370DF6004A8B89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54570AD32A370DF7004A8B89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +132,8 @@
 		54570AE02A370EB7004A8B89 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		546AAEB82A3AACD000E7C4AB /* VideoPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerVC.swift; sourceTree = "<group>"; };
 		546AAEBA2A3ABB6B00E7C4AB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		546AAEBC2A3AF93800E7C4AB /* ScreenTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTool.swift; sourceTree = "<group>"; };
+		546AAEBE2A3AFCE300E7C4AB /* CLPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLPlaceholderView.swift; sourceTree = "<group>"; };
 		547D9C082A38580400F3EB51 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
 		547D9C0C2A394F2A00F3EB51 /* DownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadView.swift; sourceTree = "<group>"; };
 		547D9C0E2A39588500F3EB51 /* Sport.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sport.json; sourceTree = "<group>"; };
@@ -163,6 +206,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5410A5CD2A3C10AA00D6C7EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5410A5D42A3C10AA00D6C7EF /* SwiftUI.framework in Frameworks */,
+				5410A5D22A3C10AA00D6C7EF /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54570AC42A370DF6004A8B89 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -178,14 +230,29 @@
 			isa = PBXGroup;
 			children = (
 				67882D32CE8FF81E1B1BBA9D /* Pods_Playgrounds.framework */,
+				5410A5D12A3C10AA00D6C7EF /* WidgetKit.framework */,
+				5410A5D32A3C10AA00D6C7EF /* SwiftUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5410A5D52A3C10AA00D6C7EF /* PlaygroundsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				5410A5D62A3C10AA00D6C7EF /* PlaygroundsWidgetBundle.swift */,
+				5410A5D82A3C10AA00D6C7EF /* PlaygroundsWidgetLiveActivity.swift */,
+				5410A5DA2A3C10AA00D6C7EF /* PlaygroundsWidget.swift */,
+				5410A5DC2A3C10AB00D6C7EF /* Assets.xcassets */,
+				5410A5DE2A3C10AB00D6C7EF /* Info.plist */,
+			);
+			path = PlaygroundsWidget;
 			sourceTree = "<group>";
 		};
 		54570ABE2A370DF6004A8B89 = {
 			isa = PBXGroup;
 			children = (
 				54570AC92A370DF6004A8B89 /* Playgrounds */,
+				5410A5D52A3C10AA00D6C7EF /* PlaygroundsWidget */,
 				54570AC82A370DF6004A8B89 /* Products */,
 				AEFB2B464CEE550C8FF69ECE /* Pods */,
 				0B008A4820A813A048458C5A /* Frameworks */,
@@ -196,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				54570AC72A370DF6004A8B89 /* Playgrounds.app */,
+				5410A5D02A3C10AA00D6C7EF /* PlaygroundsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,21 +271,21 @@
 		54570AC92A370DF6004A8B89 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				54D33A412A39B04C00B447C4 /* R.generated.swift */,
 				54570ACA2A370DF6004A8B89 /* AppDelegate.swift */,
-				547D9C182A396C6800F3EB51 /* MainTabbarController.swift */,
-				54D33A3E2A39AC9300B447C4 /* Resource */,
-				547D9C1C2A396C9600F3EB51 /* SuperNavigationController.swift */,
-				546AAEBA2A3ABB6B00E7C4AB /* BaseViewController.swift */,
-				54570ADE2A370E53004A8B89 /* HomeViewController.swift */,
 				54D33A332A399D9B00B447C4 /* HomeDataEntity.swift */,
-				547D9C072A3857E500F3EB51 /* Module */,
-				547E266E2A37131300308B79 /* Playgrounds-Bridging-Header.h */,
-				547E26722A37142A00308B79 /* Tools */,
+				54570ADE2A370E53004A8B89 /* HomeViewController.swift */,
+				546AAEBA2A3ABB6B00E7C4AB /* BaseViewController.swift */,
+				547D9C182A396C6800F3EB51 /* MainTabbarController.swift */,
+				547D9C1C2A396C9600F3EB51 /* SuperNavigationController.swift */,
 				547E262A2A3712EC00308B79 /* Extension */,
-				54570AE02A370EB7004A8B89 /* Launch Screen.storyboard */,
-				54570AD32A370DF7004A8B89 /* Assets.xcassets */,
+				547D9C072A3857E500F3EB51 /* Module */,
+				54D33A3E2A39AC9300B447C4 /* Resource */,
+				547E26722A37142A00308B79 /* Tools */,
 				54570AD82A370DF7004A8B89 /* Info.plist */,
+				54D33A412A39B04C00B447C4 /* R.generated.swift */,
+				54570AD32A370DF7004A8B89 /* Assets.xcassets */,
+				54570AE02A370EB7004A8B89 /* Launch Screen.storyboard */,
+				547E266E2A37131300308B79 /* Playgrounds-Bridging-Header.h */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
@@ -235,6 +303,7 @@
 				54D33A3C2A39ABB000B447C4 /* ICONModel.swift */,
 				547D9C102A39597100F3EB51 /* SportModel.swift */,
 				546AAEB82A3AACD000E7C4AB /* VideoPlayerVC.swift */,
+				546AAEBE2A3AFCE300E7C4AB /* CLPlaceholderView.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -300,6 +369,7 @@
 				547E267B2A37142A00308B79 /* UserHelper.swift */,
 				547E26822A37142A00308B79 /* V2FPSLabel.swift */,
 				547E26892A37142A00308B79 /* ViewStyle.swift */,
+				546AAEBC2A3AF93800E7C4AB /* ScreenTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -341,6 +411,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5410A5CF2A3C10AA00D6C7EF /* PlaygroundsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5410A5E52A3C10AB00D6C7EF /* Build configuration list for PBXNativeTarget "PlaygroundsWidgetExtension" */;
+			buildPhases = (
+				5410A5CC2A3C10AA00D6C7EF /* Sources */,
+				5410A5CD2A3C10AA00D6C7EF /* Frameworks */,
+				5410A5CE2A3C10AA00D6C7EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlaygroundsWidgetExtension;
+			productName = PlaygroundsWidgetExtension;
+			productReference = 5410A5D02A3C10AA00D6C7EF /* PlaygroundsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		54570AC62A370DF6004A8B89 /* Playgrounds */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54570ADB2A370DF7004A8B89 /* Build configuration list for PBXNativeTarget "Playgrounds" */;
@@ -351,10 +438,12 @@
 				54570AC42A370DF6004A8B89 /* Frameworks */,
 				54570AC52A370DF6004A8B89 /* Resources */,
 				89EDF4FF07158FBCC74DAA0C /* [CP] Embed Pods Frameworks */,
+				5410A5E22A3C10AB00D6C7EF /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5410A5E02A3C10AB00D6C7EF /* PBXTargetDependency */,
 			);
 			name = Playgrounds;
 			productName = Playgrounds;
@@ -371,6 +460,9 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					5410A5CF2A3C10AA00D6C7EF = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 					54570AC62A370DF6004A8B89 = {
 						CreatedOnToolsVersion = 14.3.1;
 						LastSwiftMigration = 1430;
@@ -391,11 +483,20 @@
 			projectRoot = "";
 			targets = (
 				54570AC62A370DF6004A8B89 /* Playgrounds */,
+				5410A5CF2A3C10AA00D6C7EF /* PlaygroundsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5410A5CE2A3C10AA00D6C7EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5410A5DD2A3C10AB00D6C7EF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54570AC52A370DF6004A8B89 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -470,6 +571,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5410A5CC2A3C10AA00D6C7EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5410A5D72A3C10AA00D6C7EF /* PlaygroundsWidgetBundle.swift in Sources */,
+				5410A5D92A3C10AA00D6C7EF /* PlaygroundsWidgetLiveActivity.swift in Sources */,
+				5410A5DB2A3C10AA00D6C7EF /* PlaygroundsWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54570AC32A370DF6004A8B89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -483,6 +594,7 @@
 				547E26642A3712EC00308B79 /* UIView+Border.swift in Sources */,
 				547E26542A3712EC00308B79 /* UILabel+Extension.swift in Sources */,
 				547E26592A3712EC00308B79 /* UIView+Extension.swift in Sources */,
+				546AAEBD2A3AF93800E7C4AB /* ScreenTool.swift in Sources */,
 				547D9C112A39597100F3EB51 /* SportModel.swift in Sources */,
 				547E264D2A3712EC00308B79 /* UIImageView+Extension.swift in Sources */,
 				547E269A2A37142A00308B79 /* DrawSignatureView.swift in Sources */,
@@ -496,6 +608,7 @@
 				54D33A402A39AD0400B447C4 /* ChangeAppICONCell.swift in Sources */,
 				547D9C192A396C6800F3EB51 /* MainTabbarController.swift in Sources */,
 				547E26952A37142A00308B79 /* JKTimer.swift in Sources */,
+				546AAEBF2A3AFCE300E7C4AB /* CLPlaceholderView.swift in Sources */,
 				546AAEB92A3AACD000E7C4AB /* VideoPlayerVC.swift in Sources */,
 				547E266D2A3712EC00308B79 /* Array+Extension.swift in Sources */,
 				547E265E2A3712EC00308B79 /* Double+Extension.swift in Sources */,
@@ -546,7 +659,69 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5410A5E02A3C10AB00D6C7EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5410A5CF2A3C10AA00D6C7EF /* PlaygroundsWidgetExtension */;
+			targetProxy = 5410A5DF2A3C10AB00D6C7EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		5410A5E32A3C10AB00D6C7EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4DK6QLK2RE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlaygroundsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PlaygroundsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lijingke.Playgrounds.PlaygroundsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5410A5E42A3C10AB00D6C7EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4DK6QLK2RE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlaygroundsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PlaygroundsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lijingke.Playgrounds.PlaygroundsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		54570AD92A370DF7004A8B89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -665,6 +840,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 39FD365F35D3181535514FA4 /* Pods-Playgrounds.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "野原新之助 风间彻 樱田妮妮 佐藤正男 阿呆";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -676,8 +852,8 @@
 				INFOPLIST_FILE = Playgrounds/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -700,6 +876,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6B38D62A18081040F09B8424 /* Pods-Playgrounds.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "野原新之助 风间彻 樱田妮妮 佐藤正男 阿呆";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -711,8 +888,8 @@
 				INFOPLIST_FILE = Playgrounds/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -733,6 +910,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5410A5E52A3C10AB00D6C7EF /* Build configuration list for PBXNativeTarget "PlaygroundsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5410A5E32A3C10AB00D6C7EF /* Debug */,
+				5410A5E42A3C10AB00D6C7EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		54570AC22A370DF6004A8B89 /* Build configuration list for PBXProject "Playgrounds" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

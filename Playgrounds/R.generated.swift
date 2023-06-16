@@ -25,9 +25,12 @@ struct _R {
   }
 
 
-  /// This `_R.image` struct is generated, and contains static references to 7 images.
+  /// This `_R.image` struct is generated, and contains static references to 8 images.
   struct image {
     let bundle: Foundation.Bundle
+
+    /// Image `play`.
+    var play: RswiftResources.ImageResource { .init(name: "play", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `resume`.
     var resume: RswiftResources.ImageResource { .init(name: "resume", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }

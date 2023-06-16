@@ -21,6 +21,7 @@ target 'Playgrounds' do
   pod 'FLEX', :configurations => ['Debug']
   # 播放器
   pod 'Player'
+  pod 'CLPlayer'
   # 文件管理器
   pod 'FilesProvider'
   # 导航栏
